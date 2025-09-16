@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #f0f8ff, #d1e7dd);
+  margin: 0;
+  padding: 10px;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 90vw;
+  max-width: 500px;
+  height: 90vw;
+  max-height: 500px;
+  margin: 10px auto;
+  border: 3px solid #333;
+}
+
+.cell {
+  border: 1px solid #aaa;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 10px;
+  padding: 2px;
+  position: relative;
+}
+
+.cell:nth-child(even) {
+  background: #ffeeba;
+}
+.cell:nth-child(odd) {
+  background: #b8daff;
+}
+
+.snake {
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.ladder {
+  color: brown;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.player {
+  font-size: 18px;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+
+#controls {
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #0077cc;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+#diceResult, #turn, #message {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#winner {
+  color: darkred;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+}
