@@ -48,4 +48,7 @@ Keep a scoreboard of wins for Player 1 and Player 2.
 
 Add sound effects when dice rolls, snake bites, or ladder climbs.
 
+
+live : https://snakeandladder.tiiny.site
+
 ⚡ This project is simple yet engaging and is a great example of applying JavaScript game logic with DOM manipulation.
